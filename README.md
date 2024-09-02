@@ -16,7 +16,7 @@ The date patterns supported in this system are:
 ## System Flowchart
 <img width="2514" alt="Flowchart" src="https://github.com/user-attachments/assets/a7c44202-6162-434b-a92c-62254c4ae374">
 
-The table used in this system is konfig_ftp to store all parameters related to the FTP housekeeping process.
+The table used in this system is konfig_ftp (located in the 'Table' folder) to store all parameters related to the FTP housekeeping process.
 
 ## Parameter Table Preview (konfig_ftp)
 <img width="603" alt="konfig_ftp (1)" src="https://github.com/user-attachments/assets/c77f3961-9b7e-4a4c-aa45-46b8b61d2e00"> **. . .**
