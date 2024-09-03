@@ -48,7 +48,9 @@ Note:
 *	The encrypted ftp password is encrypted using the fnEncrypt function and then will be decrypted using the fnDecrypt function in the ETL system. These functions are not included in this repository, so if you want to execute the ETL system you must create your own fnEncrypt and fnDecrypt functions.
 
 ## Example Results
-The system was executed on September 2, 2024
+* Removing file/s with the pattern name 'mm-yyyy_monthly_report' with 'mm-yyyy' is a date more than 3 months ago.
+* Removing folder/s with the pattern name 'daily_sales_reports_dd-mm-yyyy' with 'dd-mm-yyyy' is a date more than 3 days ago.
+* The system was executed on September 2, 2024 so the files that match the pattern and have dates before 06-2024 were removed, also the folders that match the pattern and have dates before 30-08-2024 were removed.
 
 Before<br>
 <img width="350" alt="Before" src="https://github.com/user-attachments/assets/ff1fdc3d-77e3-4779-8ed7-dab304b5a312">
