@@ -1,5 +1,5 @@
 # FTP-Housekeeping-System
-This ETL system is designed to clean up data in the FTP folder by removing unused files or folders with specific dates that match the configurations of date ranges and date patterns in the parameter table.
+This ETL system is designed to clean up data in the FTP folder by removing unused files or folders with names containing specific dates that match the configurations of date ranges and date patterns in the parameter table.
 
 For example, removing files with a file name pattern ‘my_file_dd-mm-yyyy.xlsx’ with ‘dd-mm-yyyy’ is a date more than 18 days ago. Or removing folders with a folder name pattern ‘yyyy-mm_my_folder’ with ‘yyyy-mm’ is a date more than six months ago.
 
@@ -14,7 +14,7 @@ The date patterns supported in this system are:
 *	mm-yyyy
 
 ## System Flowchart
-<img width="2514" alt="Flowchart" src="https://github.com/user-attachments/assets/a7c44202-6162-434b-a92c-62254c4ae374">
+<img width="2514" alt="Flowchart" src="https://github.com/user-attachments/assets/64b7d329-17cb-4c3d-ae67-fb18368f577c">
 
 The table used in this system is konfig_ftp (located in the 'Table' folder) to store all parameters related to the FTP housekeeping process.
 
@@ -34,7 +34,7 @@ The table used in this system is konfig_ftp (located in the 'Table' folder) to s
 | 6 |	flag_aktif |	int |	Flag to activate or deactivate current id. |
 | 7 |	flag_ftp |	varchar | <p>Object to be removed<br>Values: file \| folder</p> |
 | 8 |	nama_file |	varchar |	File name |
-| 9 |	extension |	varchar |	Extension of the file. Blank if flag_ftp is ‘folder’. |
+| 9 |	extension |	varchar |	Extension of the file. Filled with *null* if flag_ftp is ‘folder’. |
 | 10 |	Protocol |	varchar | <p>Protocol type<br>Value: FTP</p> |
 | 11 |	IP_Address |	varchar |	IP address of FTP |
 | 12 |	Server_Port |	varchar |	FTP port |
