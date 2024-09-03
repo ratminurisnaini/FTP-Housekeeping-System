@@ -1,3 +1,5 @@
+-- The database used is Microsoft SQL Server
+
 USE myDatabase
 
 CREATE TABLE [dbo].[konfig_ftp] (
